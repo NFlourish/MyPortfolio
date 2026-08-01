@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: bisque;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    font-weight: bold;
+}
+
+.unordered {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.unordered li a{
+ text-decoration: none;
+ font-size: 20px;
+ color: black;
+}
+
+.unordered li:hover a{
+    color: rgb(230, 138, 18);
+    text-decoration: overline;
+}
+
+.logo{
+    font-size: 25px;
+    color: #4A2C2A;
+    text-shadow:
+        5px 5px 10px rgba(74, 44, 42, 0.3),
+        -5px -5px 10px rgba(74, 44, 42, 0.2);
+}
+
+.home{
+    display: flex;
+}
+
+.home-info{
+    padding: 10% 5%;
+}
+
+.image{
+    width:300px;
+    height: 300px;
+    border-radius: 100%;
+    background-color: blueviolet;
+    box-shadow: 0 0 30px;
+    margin: 90px 0 0 400px;
+}
+
+.imag{
+    width: 290px;
+    height: 290px;
+    border-radius: 100%;
+    background-color: red; 
+    margin: 5px;
+}
+
+.img{
+    width: 290px;
+    height: 290px;
+    border-radius: 100%;
+}
+
+.media{
+    margin-top: 10px;
+}
+
+.btncv{
+    height: 45px;
+    width: 150px;
+    border-radius: 25px;
+    font-size: 20px;
+    margin-top: 20px;
+    background-color: beige;
+    color: #4A2C2A;
+    text-shadow:
+        5px 5px 10px rgba(74, 44, 42, 0.3),
+        -5px -5px 10px rgba(74, 44, 42, 0.2);
+    border: 1px solid #4A2C2A;
+}
+
+.about{
+    padding: 1% 5%;
+}
+
+.about-info{
+    text-align: center;
+    height: 100px;
+    width: 1215px;
+    background-color: beige;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 15px;
+    padding: 30px;
+}
+
+.info{
+    display: flex;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.personal{
+    height: 450px;
+    width: 400px;
+    background-color: beige;
+    border-radius: 10px;
+    padding: 3% 3%;
+    font-size: 20px;  
+}
+
+.personal-info{
+    overflow-y: scroll;
+    height: 320px;
+    width: 300px;
+    margin-top: 20px;
+}
+
+.education{
+    height: 450px;
+    width: 400px;
+    background-color: beige;
+    border-radius: 10px;
+    padding: 3%;
+    font-size: 20px;
+}
+
+.skills{
+    height: 450px;
+    width: 400px;
+    background-color: beige;
+    border-radius: 10px;
+    padding: 3% 3%;
+    font-size: 20px;
+}
+
+.bar-container{
+    width: 100%;
+    height: 25px;
+    background: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.bar-fill{
+    height: 100%;
+    width: 75%;
+    background: rgb(243, 206, 160);
+    transition: width 0.3s ease;
+}
+
+.bar-container1{
+    width: 100%;
+    height: 25px;
+    background: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.bar-fill1{
+    height: 100%;
+    width: 50%;
+    background: rgb(243, 206, 160);
+    transition: width 0.3s ease;
+}
+
+
+.bar-container2{
+    width: 100%;
+    height: 25px;
+    background: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.bar-fill2{
+    height: 100%;
+    width: 25%;
+    background: rgb(243, 206, 160);
+    transition: width 0.5s ease-in-out;
+}
+
+.services{
+    padding: 1% 5%;
+    
+}
+
+.service-div{
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.d1, .d2, .d3, .d4{
+    height: 300px;
+    width: 300px;
+    border-radius: 30px;
+    background-color: beige;
+    padding: 3%;
+    text-align: center;
+}
+
+.btn1, .btn2, .btn3, .btn4{
+    padding: 10px;
+    border: 2px solid bisque;
+    margin-top: 40px;
+}
+
+.contact{
+    padding: 1% 5%;
+    
+}
+
+.cont{
+    height: 300px;
+    width: 100%;
+    background-color: beige;
+    border-radius: 30px;
+    margin-top: 30px;
+    padding: 3%;
+}
