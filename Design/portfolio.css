@@ -44,6 +44,7 @@ nav{
 
 .home-info{
     padding: 10% 5%;
+    width: 700px;
 }
 
 .image{
@@ -52,7 +53,7 @@ nav{
     border-radius: 100%;
     background-color: blueviolet;
     box-shadow: 0 0 30px;
-    margin: 90px 0 0 400px;
+    margin: 90px 0 0 200px;
 }
 
 .imag{
@@ -226,4 +227,34 @@ nav{
     border-radius: 30px;
     margin-top: 30px;
     padding: 3%;
+}
+
+@media only screen and (max-width: 400px) {
+    .home{
+        flex-direction: column-reverse;
+    }
+
+    .home-info{
+        text-align: center;
+        width: 380px;
+    }
+    .home-info h1 {
+        font-size: 40px;
+        padding-bottom: 10px;
+    }
+
+    .home-info p{
+        padding-top: 10px;
+
+    }
+
+    .image{
+        margin: 50px 0 30px 35px;
+    }
+
+    .about-info{
+        width: 350px;
+        height: 200px;
+        padding: 10px;
+    }
 }
