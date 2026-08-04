@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+/*base setup - hidden until scrolled into view*/
+.fade-in-up, .fade-in-left, .fade-in-right{
+    opacity: 0;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
 nav{
     background-color: bisque;
     display: flex;
@@ -11,6 +17,23 @@ nav{
     align-items: center;
     padding: 20px 5%;
     font-weight: bold;
+}
+
+.toggle{
+    display: none;
+    background: #F4B8A8;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
 }
 
 .unordered {
@@ -80,12 +103,16 @@ nav{
     border-radius: 25px;
     font-size: 20px;
     margin-top: 20px;
-    background-color: beige;
+    background-color: #F4B8A8;
     color: #4A2C2A;
     text-shadow:
         5px 5px 10px rgba(74, 44, 42, 0.3),
         -5px -5px 10px rgba(74, 44, 42, 0.2);
-    border: 1px solid #4A2C2A;
+    border: 1px solid #F4B8A8;
+}
+
+.fade-in-up{
+    transform: translate(30px);
 }
 
 .about{
@@ -100,12 +127,13 @@ nav{
     border-radius: 10px;
     text-align: center;
     margin-top: 15px;
-    padding: 30px;
+    padding: 20px;
 }
 
 .info{
     display: flex;
-    gap: 50px;
+    justify-content: space-evenly;
+    gap: 30px;
     margin-top: 20px;
 }
 
@@ -189,6 +217,10 @@ nav{
     transition: width 0.5s ease-in-out;
 }
 
+.fade-in-left{
+    transform: translate(-40px);
+}
+
 .services{
     padding: 1% 5%;
     
@@ -211,25 +243,110 @@ nav{
 
 .btn1, .btn2, .btn3, .btn4{
     padding: 10px;
-    border: 2px solid bisque;
+    border: 2px solid #f7e7ce;
     margin-top: 40px;
+    background-color: #f7e7ce;
+}
+
+.fade-in-right{
+    transform: translate(40px);
 }
 
 .contact{
     padding: 1% 5%;
-    
 }
 
-.cont{
-    height: 300px;
-    width: 100%;
+.conta{
     background-color: beige;
+    display: flex;
+    font-size: 18px;
+    gap: 200px;
+    height: 450px;
+    width: 100%;
     border-radius: 30px;
     margin-top: 30px;
-    padding: 3%;
+    padding: 2%; 
 }
 
-@media only screen and (max-width: 400px) {
+.con{
+    height: 410px;
+    width: 500px;
+    background-color: bisque;
+    border-radius: 30px;
+    padding: 2%;
+    text-align: center;
+}
+
+input{
+    width: 350px;
+    padding: 3%;
+    margin-top: 10px;
+    border: 2px solid bisque; 
+    background-color: beige; 
+    border-radius: 10px;
+}
+
+textarea{
+    width: 350px;
+    height: 90px;
+    padding: 1%;
+    margin-top: 10px;
+    border: 2px solid bisque; 
+    background-color: beige; 
+    border-radius: 10px;
+}
+
+.btnmess{
+    height: 45px;
+    width: 350px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 3px solid #F4B8A8;
+    background-color: #F4B8A8;
+}
+
+.show{
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+}
+
+@media only screen and (max-width: 480px) {
+    .unordered{
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        position: absolute;
+        height: 425%;
+        width: 200px;
+        top: 0;
+        right: 0;
+        padding: 5rem 1.5rem;
+        box-shadow: 0 10px 10px rgba(0 0 0 0.5);
+        backdrop-filter: blur(20px); 
+    }
+
+    .unordered.active{
+        display: flex;
+    }
+
+    .toggle{
+        display: block;
+        z-index: 999;
+    }
+
+    .toggle.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .toggle.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .toggle.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
     .home{
         flex-direction: column-reverse;
     }
@@ -257,4 +374,79 @@ nav{
         height: 200px;
         padding: 10px;
     }
+
+    .info{
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .personal{
+        width: 350px;
+        padding: 5%;
+    }
+
+    .education{
+        width: 350px;
+        padding: 5%;
+    }
+
+    .skills{
+        width: 350px;
+        padding: 5%;
+    }
+
+    .service-div{
+        flex-wrap: wrap;
+        padding: 6%;
+    }
+
+    .conta{
+        flex-direction: column-reverse;
+        height: 900px;
+        width: 350px;
+        gap: 50px;
+        align-items: center;
+    }
+
+    .cont{
+        background-color: beige;
+        height: 410px;
+        width: 350px;
+        border-radius: 30px;
+        padding: 2%;
+        margin: 3%;
+    }
+
+    .con{
+        background-color: beige;
+        height: 400px;
+        width: 350px;
+        border-radius: 30px;
+        padding: 2%;
+        text-align: center;
+    }
+
+    input{
+        width: 300px;
+        border-color: #F4B8A8;
+    }
+
+    textarea{
+        width: 300px;
+        border-color: #F4B8A8;
+    }
+
+    .btnmess{
+        width: 300px;
+    }
+
+    .pa{
+        font-size: 15px;
+        padding: 1%;
+    }
+
+}
+
+@media only screen and (max-width: 768px){
+
 }

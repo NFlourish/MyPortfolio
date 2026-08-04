@@ -6,21 +6,27 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="index.css">
 </head>
+<script src="script.js"></script>
 <body style="background-color: bisque; color: #4A2C2A;">
-    <nav>
+    <nav class="fade-in-up">
 
         <p class="logo"> Flourish </p>
+
+        <button class="toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
 
          <ul class="unordered">
             <li><a href="#section1">Home</a></li>
             <li><a href="#section2">About</a></li>
             <li><a href="#section3">Services</a></li>
-            <li><a href="#section4">Portfolio</a></li>
-            <li><a href="#section5">Contact</a></li>
+            <li><a href="#section4">Contact</a></li>
          </ul>
     </nav>
     
-    <section class="home" id="section1">
+    <section class="home  fade-in-up" id="section1">
         <div class="home-info">
             <h1>Nayo Flourish</h1>
             <h2>I'm a web Designer</h2>
@@ -47,7 +53,7 @@
     </section>
 
 
-    <section class="about" id="section2">
+    <section class="about  fade-in-left" id="section2">
         <h1 style="text-align: center;">About Me</h1>
         <div class="about-info">
         <p style="font-size: 18px;">
@@ -64,7 +70,7 @@
             <h2> Personal Information</h2>
         <div class="personal-info">    
             <p>
-                Date of birth: 13-10-2007``
+                Date of birth: 13-10-2007
                 <br><br>
                 Age: 19
                 <br><br>
@@ -155,7 +161,7 @@
 
 
 
-    <section class="services" id="section3">
+    <section class="services  fade-in-right" id="section3">
        <h1 style="text-align: center;"> My Services</h1>
 
        <div class="service-div">
@@ -194,17 +200,10 @@
     <br><br>
 
 
-
-    <section class="portfolio" id="section4">
-        <h1 style="text-align: center;"> My Portfolio</h1>
-    </section>
-
-     
-    <br><br>
-
-
-    <section class="contact" id="section5">
+    <section class="contact  fade-in-up" id="section4">
         <h1 style="text-align: center;">Contact Me</h1>
+        <div class="conta">
+
         <div class="cont">
             <h2>Contact Info</h2>
             <br>
@@ -216,6 +215,9 @@
             <label name="LinkedIn">LinkedIn:</label>
             <a href="mailto:linkedin.com/in/flourish">linkedin.com/in/flourish</a>
             <br><br>
+            <label name="Github">Github:</label>
+            <a href="mailto:github.com/NFlourish">github.com/NFlourish</a>
+            <br><br>
             <label name="tel">Phone:</label>
             <label>+237 673 125 272</label>
             <br><br>
@@ -226,8 +228,30 @@
             <a href="https://www.linkedin.com/in/nayo-flourish" target="_blank"><img src="./image/icons8-linkedin-24.png" alt="in"></a>
             <a href="https://github.com/NFlourish" target="_blank"><img src="./image/icons8-github-logo-24.png" alt="github"></a>
             <a href="mailto:nayoflourish@gmail.com" target="_blank"><img src="./image/icons8-email-24.png" alt="mail"></a>
+            <br><br><br>
+            <hr>
             <br><br>
-            <p style="text-align: center;">© 2026 Nayo Flourish | Student.  All rights reserved.</p>
+            <p class="pa">© 2026 Nayo Flourish | Student.  All rights reserved.</p>
+            </div>
+        
+        <div class="con">
+            <h2>Send a Message</h2>
+            <br>
+            <input type="text" placeholder="Your Name">
+            <br><br>
+            <input type="text" placeholder="Your Email">
+            <br><br>
+            <textarea type="text" placeholder="Your Message"></textarea>
+            <br><br>
+            <a href="https://wa.me/237673125272" target="_blank">
+            <button class="btnmess">
+                <img src="./image/icons8-whatsapp-24.png">
+                Send Message
+            </button>
+            </a>
+        </div>
+
+
         </div>
     </section>
 
