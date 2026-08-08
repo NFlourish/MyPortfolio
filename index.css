@@ -401,6 +401,7 @@ textarea{
         width: 350px;
         height: 200px;
         padding: 10px;
+        font-size: 15px;
     }
 
     .info{
@@ -469,7 +470,7 @@ textarea{
     }
 
     .pa{
-        font-size: 15px;
+        font-size: 12px;
         padding: 1%;
     }
 
