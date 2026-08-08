@@ -382,6 +382,7 @@ textarea{
     .home-info{
         text-align: center;
         width: 380px;
+        margin-left: 30px;
     }
     .home-info h1 {
         font-size: 40px;
@@ -394,12 +395,16 @@ textarea{
     }
 
     .image{
-        margin: 50px 0 30px 35px;
+        margin: 50px 0 30px 80px;
+    }
+
+    .about{
+        margin-left: 30px;
     }
 
     .about-info{
         width: 350px;
-        height: 200px;
+        height: 230px;
         padding: 10px;
         font-size: 15px;
     }
@@ -427,18 +432,25 @@ textarea{
     .service-div{
         flex-wrap: wrap;
         padding: 6%;
+        margin-left: 30px;
+    }
+
+    .contact{
+        margin-left: 30px;
+        
     }
 
     .conta{
         flex-direction: column-reverse;
-        height: 900px;
+        height: 860px;
         width: 350px;
         gap: 50px;
         align-items: center;
+        background-color: bisque;
+        box-shadow: none;
     }
 
     .cont{
-        background-color: beige;
         height: 410px;
         width: 350px;
         border-radius: 30px;
@@ -471,7 +483,6 @@ textarea{
 
     .pa{
         font-size: 12px;
-        padding: 1%;
     }
 
 }
