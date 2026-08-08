@@ -337,7 +337,7 @@ textarea{
 
 
 /*mobiles*/
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 450px) {
 
     .unordered{
         display: none;
@@ -382,7 +382,7 @@ textarea{
     .home-info{
         text-align: center;
         width: 380px;
-        margin-left: 30px;
+        margin-left: 20px;
     }
     .home-info h1 {
         font-size: 40px;
@@ -395,11 +395,11 @@ textarea{
     }
 
     .image{
-        margin: 50px 0 30px 80px;
+        margin: 50px 0 30px 60px;
     }
 
     .about{
-        margin-left: 30px;
+        margin-left: 20px;
     }
 
     .about-info{
@@ -432,11 +432,11 @@ textarea{
     .service-div{
         flex-wrap: wrap;
         padding: 6%;
-        margin-left: 30px;
+        margin-left: 20px;
     }
 
     .contact{
-        margin-left: 30px;
+        margin-left: 20px;
         
     }
 
